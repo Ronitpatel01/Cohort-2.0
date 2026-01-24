@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "helvetica neue";
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+#main {
+height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, black,grey);
+  display: grid;
+  grid-template-columns: 40% 1fr 1fr 1fr;
+  grid-template-rows: 70% 1fr;
+  gap: 20px;
+  padding: 20px;
+  grid-template-areas: "div1 div2 div2 div2" "div1 div3 div4 div5";
+  transition: 1s ease-in ;
+
+}
+
+#div1 {
+  background-image: url("https://images.unsplash.com/photo-1699953792410-ff03df4483e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aW5kb3JlfGVufDB8fDB8fHww");
+  background-position: center;
+  background-size: cover;
+  grid-area: div1;
+}
+
+#div2 {
+background-image: url(https://plus.unsplash.com/premium_photo-1692102550620-35f8716814b4?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);  background-size: cover;
+    background-repeat: no-repeat;
+background-position: center;
+  background-size: cover;
+  grid-area: div2;
+}
+
+#div3 {
+  background-image: url(https://images.unsplash.com/photo-1658730487395-dcc99f5d997c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dWpqYWlufGVufDB8fDB8fHww);
+  background-position: center;
+  background-size: cover;
+    background-repeat: no-repeat;
+
+  grid-area: div3;
+}
+
+#div4 {
+  background-image: url(https://media.istockphoto.com/id/1393793234/photo/jam-gate-mhow-madhyapradesh.webp?a=1&b=1&s=612x612&w=0&k=20&c=ww1bcGRJgfhkixqNcDcQXrvfz9D55utb5PUYVupv8UY=);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: div4;
+}
+
+#div5 {
+background-image: url(https://plus.unsplash.com/premium_photo-1661930618375-aafabc2bf3e7?q=80&w=1399&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  grid-area: div5;
+}
+#main div:hover {
+  transform: scale(1.02); /* Slight zoom */
+  z-index: 10;            /* Ensures it stays on top of others */
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+} 

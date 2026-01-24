@@ -16,9 +16,13 @@ body {
   padding:30px;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow: auto;
   /* column-gap: 20px; */
   /* row-gap: 10px; */
+}
+#main::-webkit-scrollbar{
+  display: none;
 }
 .cards{
   height:320px;

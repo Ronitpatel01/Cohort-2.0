@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 1fr 0..5fr 0.5fr;
+    grid-template-areas: "header header header"
+               "section section section"
+               "div1 div2 div3"
+               "div1 div4 div3";
+    gap: 10px;
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+    background-image: url(https://media.istockphoto.com/id/1253226462/photo/colorful-technology-abstract-light-tunnel-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=Frbuol29Ippwx2UjOW0k42a5ZL6kPOlPcLMyNvcL8t8=);
+    background-size: cover  ;
+}
+header{
+  grid-area: header;
+  background-color: royalblue;
+}
+
+section{
+    grid-area: section;
+  background-color: mediumaquamarine;
+}
+#div1{
+  grid-area:div1;
+  background-color: mediumorchid;
+}
+#div4{
+  grid-area: div4;
+  background-color: mediumspringgreen;
+}
+#div2{
+  grid-area: div2;
+  background-color: mediumslateblue;
+}
+#div3{
+  grid-area: div3;
+  background-color: mediumvioletred;
+}
