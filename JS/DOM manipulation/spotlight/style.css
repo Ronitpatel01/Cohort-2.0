@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+}
+
+html,body {
+    height: 100%;
+    width: 100%; 
+    background: url(https://images.pexels.com/photos/29271905/pexels-photo-29271905.jpeg);
+    background-position: top;
+    background-size: cover;
+  }
+:root{
+  --X:-200px;
+  --Y:-200px;
+}
+main{
+  height: 100%;
+  width: 100%; 
+  background: radial-gradient(200px at var(--X) var(--Y),rgba(255,255,255,0),rgba(0,0,0,0.8))
+}
