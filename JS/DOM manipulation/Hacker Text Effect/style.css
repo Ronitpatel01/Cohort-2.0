@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+}
+html,
+body {
+  font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right bottom , black ,#222)
+} 
+
+p{
+  color: rgb(1, 76, 197);
+  font-size: 3rem;
+  padding-left: 5px;
+  text-align: left;
+  display: inline-block;
+  font-weight: 400;
+}
+
+span{
+  font-weight: 600;
+}
+
+p {
+  transition: filter 0.5s ease;
+  filter: blur(8px);
+}
+p.searching {
+  filter: blur(0px); 
+}
