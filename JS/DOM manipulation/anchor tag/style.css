@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+body{
+  background-image: linear-gradient(to right, black,#222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.anchor-btn {
+  anchor-name: --my-button;
+  padding: 12px 24px;
+  background: #6200ee;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.status-bubble {
+  position: absolute; /* Must be absolute or fixed */
+  position-anchor: --my-button; /* Tell it which anchor to follow */
+  
+  /* 3. Logical Positioning */
+  bottom: anchor(top);   /* Bottom of bubble touches Top of button */
+  left: anchor(right);   /* Left of bubble touches Right of button */
+  
+  /* Optional: Styling the bubble */
+  margin-bottom: 8px;    /* Add a little gap */
+  padding: 4px 12px;
+  background: #03dac6;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
