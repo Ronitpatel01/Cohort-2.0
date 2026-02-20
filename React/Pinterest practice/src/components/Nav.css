@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.nav-container {
+    width: 100%;
+    padding: 20px 40px; 
+    display: flex;
+    justify-content: space-between; /* Space out Logo, Links, Button */
+    align-items: center;
+    background-color: #fff;
+}
+
+.nav-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.nav-links-wrapper {
+    display: flex;
+    gap: 10px;
+    padding: 6px 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 50px;
+}
+
+.nav-links-wrapper a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #666;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+.nav-links-wrapper a:hover {
+    color: #000;
+}
+
+.book-btn {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 17px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.book-btn span {
+    font-size: px;
+}
