@@ -66,18 +66,7 @@
   text-align: center;
 }
 
-.stats-row h3 {
-  font-size: 2.5rem;
-  margin-bottom: 5px;
-  color: #1a1a1a; /* Dark text for light background */
-}
 
-.stats-row p {
-  font-size: 0.9rem;
-  color: #666;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

@@ -1,0 +1,30 @@
+.stats-row h3 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  color: #1a1a1a; /* Dark text for light background */
+}
+
+.stats-row p {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .stats-row {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.about{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px; 
+  align-items: center;
+}
+#abt{
+  border-radius: 10px;
+  border: 10px solid black;
+}
